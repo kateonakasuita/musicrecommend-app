@@ -51,19 +51,19 @@ st.subheader("3. どんなスタイルがいい？")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🎹 ピアノ風", use_container_width=True):
-        st.session_state["style"] = "piano"
-        st.session_state["reason"] = "🎹 ピアノ風"
+    if st.button("🎹 オルゴール風", use_container_width=True):
+        st.session_state["style"] = "musicbox"
+        st.session_state["reason"] = "🎹 オルゴール風"
 
 with col2:
-    if st.button("🎷 ジャズ風", use_container_width=True):
-        st.session_state["style"] = "jazz"
-        st.session_state["reason"] = "🎷 ジャズ風"
+    if st.button("🪭 和風", use_container_width=True):
+        st.session_state["style"] = "japan"
+        st.session_state["reason"] = "🪭 和風"
 
 with col3:
-    if st.button("🎶 オルゴール風", use_container_width=True):
-        st.session_state["style"] = "musicbox"
-        st.session_state["reason"] = "🎶 オルゴール風"
+    if st.button("🎮 ゲーム風", use_container_width=True):
+        st.session_state["style"] = "8bit"
+        st.session_state["reason"] = "🎮 ゲーム風"
 
 # 6. 気分選択ボタン
 st.subheader("4. あなたの気分は？")
@@ -72,17 +72,17 @@ col1, col2, col3 = st.columns(3)
 with col1:
     if st.button("楽しい 😀", use_container_width=True):
         st.session_state["style"] = "piano"
-        st.session_state["reason"] = "楽しい 😀（ピアノ風）"
+        st.session_state["reason"] = "楽しい 😀"
 
 with col2:
     if st.button("チル 😎", use_container_width=True):
         st.session_state["style"] = "jazz"
-        st.session_state["reason"] = "チル 😎（ジャズ風）"
+        st.session_state["reason"] = "チル 😎"
 
 with col3:
     if st.button("落ち着きたい 😆", use_container_width=True):
         st.session_state["style"] = "musicbox"
-        st.session_state["reason"] = "落ち着きたい 😆（オルゴール風）"
+        st.session_state["reason"] = "落ち着きたい 😆"
 
 # 7. 再生・ダウンロードエリア
 if "style" in st.session_state:
